@@ -7,12 +7,12 @@
 
 <script>
 export default {
-  name: "Student",
+  name: 'Student',
   data() {
     return {
-      name: "张三",
+      name: '张三',
       age: 18,
-    };
+    }
   },
-};
+}
 </script>

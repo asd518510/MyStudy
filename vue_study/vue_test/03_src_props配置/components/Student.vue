@@ -10,16 +10,16 @@
 
 <script>
 export default {
-  name: "Student",
+  name: 'Student',
   data() {
     return {
-      msg: "我是全栈工程师",
+      msg: '我是全栈工程师',
       myAge: this.age,
-    };
+    }
   },
   methods: {
     updateAge() {
-      this.myAge++;
+      this.myAge++
     },
   },
   //简单声明接收
@@ -47,5 +47,5 @@ export default {
       required: true,
     },
   },
-};
+}
 </script>

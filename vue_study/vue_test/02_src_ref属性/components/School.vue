@@ -7,14 +7,14 @@
 
 <script>
 export default {
-  name: "School",
+  name: 'School',
   data() {
     return {
-      name: "希望小学",
-      address: "贵州",
-    };
+      name: '希望小学',
+      address: '贵州',
+    }
   },
-};
+}
 </script>
 
 <style>
