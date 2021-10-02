@@ -11,9 +11,9 @@ export default {
   data() {
     return {
       name: '希望小学',
-      address: '贵州',
+      address: '贵州'
     }
-  },
+  }
 }
 </script>
 

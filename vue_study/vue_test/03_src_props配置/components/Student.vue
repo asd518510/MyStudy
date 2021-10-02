@@ -14,13 +14,13 @@ export default {
   data() {
     return {
       msg: '我是全栈工程师',
-      myAge: this.age,
+      myAge: this.age
     }
   },
   methods: {
     updateAge() {
       this.myAge++
-    },
+    }
   },
   //简单声明接收
   //props: ["name", "sex", "age"],
@@ -36,16 +36,16 @@ export default {
   props: {
     name: {
       type: String, //name的类型是字符串
-      required: true, //name是必须的
+      required: true //name是必须的
     },
     age: {
       type: Number,
-      default: 99, //默认值
+      default: 99 //默认值
     },
     sex: {
       type: String,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 }
 </script>

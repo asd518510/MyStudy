@@ -7,16 +7,16 @@
 
 <script>
 //引入一个mixin
-import { mixin,hunhe2 } from "../mixin";
+import { mixin, hunhe2 } from '../mixin'
 
 export default {
-  name: "Student",
+  name: 'Student',
   data() {
     return {
-      name: "张三",
-      sex: "男",
-    };
+      name: '张三',
+      sex: '男'
+    }
   },
-  mixins:[mixin,hunhe2]
-};
+  mixins: [mixin, hunhe2]
+}
 </script>

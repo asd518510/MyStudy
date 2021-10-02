@@ -1,22 +1,27 @@
 <template>
-  <div>
-    <h2 @click="showName">学生姓名：{{name}}</h2>
+  <div class="demo">
+    <h2 class="qwe">学生姓名：{{name}}</h2>
     <h2>学生性别：{{sex}}</h2>
   </div>
 </template>
 
 <script>
-//引入一个mixin
-import { mixin,hunhe2 } from "../mixin";
-
 export default {
-  name: "Student",
+  name: 'Student',
   data() {
     return {
-      name: "张三",
-      sex: "男",
-    };
-  },
-  mixins:[mixin,hunhe2]
-};
+      name: '张三',
+      sex: '男'
+    }
+  }
+}
 </script>
+
+<style lang="less" scoped>
+     .demo{
+        background-color: orange;
+        .qwe{
+            font-size: 40px;
+        }
+    }
+</style>

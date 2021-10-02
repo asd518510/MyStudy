@@ -8,5 +8,5 @@ Vue.config.productionTip = false
 //创建Vue实例对象
 new Vue({
     el: '#app',
-    render: (h) => h(App),
+    render: (h) => h(App)
 })

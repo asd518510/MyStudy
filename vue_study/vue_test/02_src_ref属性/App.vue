@@ -15,11 +15,11 @@ import School from './components/School.vue'
 export default {
   name: 'App',
   components: {
-    School,
+    School
   },
   data() {
     return {
-      msg: '学习Vue！',
+      msg: '学习Vue！'
     }
   },
   methods: {
@@ -27,8 +27,8 @@ export default {
       console.log(this.$refs.title) //真实DOM元素
       console.log(this.$refs.btn) //真实DOM元素
       console.log(this.$refs.sch) //School组件的实例对象（vc）
-    },
-  },
+    }
+  }
 }
 </script>
 

@@ -16,8 +16,8 @@ export default {
   name: 'App',
   components: {
     School,
-    Student,
-  },
+    Student
+  }
 }
 </script>
 
