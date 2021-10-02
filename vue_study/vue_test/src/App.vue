@@ -1,23 +1,17 @@
 <template>
-  <div>
-    <Student></Student>
-    <hr />
-    <School></School>
-  </div>
 </template>
 
 <script>
-//引入Student组件
-import Student from './components/Student.vue'
-
-//引入Student组件
-import School from './components/School.vue'
+import LyHeader from './components/LyHeader.vue'
+import LyList from './components/LyList.vue'
+import LyFooter from './components/LyFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    Student,
-    School,
+      LyHeader,
+      LyList,
+      LyFooter
   },
 }
 </script>
