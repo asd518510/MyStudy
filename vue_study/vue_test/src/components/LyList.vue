@@ -1,14 +1,35 @@
 <template>
-
+  <ul class="todo-main">
+    <LyItem v-for="todoObj in todos"
+            :key="todoObj.id"
+            :todo="todoObj"
+            :checkTodo="checkTodo" />
+  </ul>
 </template>
 
 <script>
 import LyItem from './LyItem.vue'
 export default {
   name: 'LyList',
-  components: { LyItem }
+  components: { LyItem },
+  props: ['todos', 'checkTodo']
 }
 </script>
 
 <style>
+/*main*/
+.todo-main {
+  margin-left: 0px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 0px;
+}
+.todo-empty {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding-left: 5px;
+  margin-top: 10px;
+}
 </style>
