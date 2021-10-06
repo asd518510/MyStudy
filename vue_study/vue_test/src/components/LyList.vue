@@ -3,7 +3,8 @@
     <LyItem v-for="todoObj in todos"
             :key="todoObj.id"
             :todo="todoObj"
-            :checkTodo="checkTodo" />
+            :checkTodo="checkTodo"
+            :deleteTodo="deleteTodo" />
   </ul>
 </template>
 
@@ -12,11 +13,11 @@ import LyItem from './LyItem.vue'
 export default {
   name: 'LyList',
   components: { LyItem },
-  props: ['todos', 'checkTodo']
+  props: ['todos', 'checkTodo', 'deleteTodo']
 }
 </script>
 
-<style>
+<style scoped>
 /*main*/
 .todo-main {
   margin-left: 0px;
@@ -24,6 +25,7 @@ export default {
   border-radius: 2px;
   padding: 0px;
 }
+
 .todo-empty {
   height: 40px;
   line-height: 40px;

@@ -4,8 +4,11 @@
       <div class="todo-wrap">
         <LyHeader :addTodo="addTodo" />
         <LyList :todos="todos"
-                :checkTodo="checkTodo" />
-        <LyFooter />
+                :checkTodo="checkTodo"
+                :deleteTodo="deleteTodo" />
+        <LyFooter :todos="todos"
+                  :checkAllTodo="checkAllTodo"
+                  :clearAllTodo="clearAllTodo" />
       </div>
     </div>
   </div>
@@ -42,12 +45,30 @@ export default {
       this.todos.forEach((todo) => {
         if (todo.id == id) todo.done = !todo.done
       })
+    },
+    //删除一个todo
+    deleteTodo(id) {
+      this.todos = this.todos.filter((todo) => {
+        return todo.id !== id
+      })
+    },
+    //全选or取消全选
+    checkAllTodo(done) {
+      this.todos.forEach((todo) => {
+        todo.done = done
+      })
+    },
+    //清除所有已经完成的todo
+    clearAllTodo() {
+      this.todos = this.todos.filter((todo) => {
+        return !todo.done
+      })
     }
   }
 }
 </script>
 
-<style scoped>
+<style>
 /*base*/
 body {
   background: #fff;

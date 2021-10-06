@@ -34,7 +34,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /*header*/
 .todo-header input {
   width: 560px;
@@ -44,6 +44,7 @@ export default {
   border-radius: 4px;
   padding: 4px 7px;
 }
+
 .todo-header input:focus {
   outline: none;
   border-color: rgba(82, 168, 236, 0.8);
